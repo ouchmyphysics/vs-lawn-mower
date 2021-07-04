@@ -399,15 +399,15 @@ class TitleState extends MusicBeatState
 				addMoreText('presents');
 			// credTextShit.text += '\npresent...';
 			// credTextShit.addText();
-			case 4:
+			case 5:
 				deleteCoolText();
 			// credTextShit.visible = false;
 			// credTextShit.text = 'In association \nwith';
 			// credTextShit.screenCenter();
-			case 5:
-				createCoolText(['In Partnership', 'with']);
+			case 6:
+				createCoolText(['ayyy', 'newgrounds']);
 			case 7:
-				addMoreText('Newgrounds');
+				addMoreText('how are ya');
 			    ngSpr.visible = true;
 			// credTextShit.text += '\nNewgrounds';
 			case 8:
@@ -425,17 +425,18 @@ class TitleState extends MusicBeatState
 			// credTextShit.text += '\nlmao';
 			case 12:
 				deleteCoolText();
+				addMoreText('Friday');
 			// credTextShit.visible = false;
 			// credTextShit.text = "Friday";
 			// credTextShit.screenCenter();
 			case 13:
-				addMoreText('Friday');
+				addMoreText('Night');
 			// credTextShit.visible = true;
 			case 14:
-				addMoreText('Night');
+				addMoreText('Funkin');
 			// credTextShit.text += '\nNight';
 			case 15:
-				addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
+				addMoreText('VS LAWNMOWER'); // credTextShit.text += '\nFunkin';
 
 			case 16:
 				skipIntro();
