@@ -114,8 +114,14 @@ class Caching extends MusicBeatState
 
         for (i in music)
         {
-            FlxG.sound.cache(Paths.inst(i));
-            FlxG.sound.cache(Paths.voices(i));
+            if (!i.startsWith("tutorial")) {
+              FlxG.sound.cache(Paths.inst(i));
+              }
+            if (!i.startsWith("offsettest")) {}
+            else {
+              FlxG.sound.cache(Paths.inst(i));
+              FlxG.sound.cache(Paths.voices(i));
+              }
             trace("cached " + i);
             done++;
         }
