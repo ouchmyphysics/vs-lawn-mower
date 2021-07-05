@@ -10,7 +10,7 @@ ok here's what you do
 
 so first run ```haxelib install actuate```
 
-then you run ```haxelib git extension-webm https://github.com/GrowtopiaFli/extension-webm```
+then you run ```haxelib git extension-webm https://github.com/KadeDev/extension-webm```
 
 then ```lime rebuild extension-webm windows (or mac/linux)```
 
