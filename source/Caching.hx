@@ -127,7 +127,7 @@ class Caching extends MusicBeatState
         }
 
         trace("Finished caching...");
-
+        FlxG.sound.load('assets/sounds/titleShoot.ogg')
         FlxG.switchState(new TitleState());
     }
 

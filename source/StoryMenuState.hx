@@ -323,6 +323,7 @@ class StoryMenuState extends MusicBeatState
 			{
 				if (curWeek == 0)
 					{
+						FlxG.sound.music.stop();
 						LoadingState.loadAndSwitchState(new VideoState("assets/videos/open.webm", new PlayState()));
 					}
 					else

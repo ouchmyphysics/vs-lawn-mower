@@ -76,7 +76,7 @@ class Main extends Sprite
 		}
 
 		#if cpp
-		initialState = TitleState;
+		initialState = Caching;
 		// fuck you caching screen
 		game = new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen);
 		#else
