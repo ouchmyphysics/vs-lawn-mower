@@ -157,13 +157,12 @@ class TitleState extends MusicBeatState
 			// music.loadStream(Paths.music('freakyMenu'));
 			// FlxG.sound.list.add(music);
 			// music.play();
-			FlxG.sound.play('assets/sounds/titleShoot.ogg');
 			FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
 
 			FlxG.sound.music.fadeIn(4, 0, 0.7);
 		}
 
-		Conductor.changeBPM(102);
+		Conductor.changeBPM(150);
 		persistentUpdate = true;
 
 		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
@@ -298,7 +297,7 @@ class TitleState extends MusicBeatState
 
 			FlxG.camera.flash(FlxColor.WHITE, 1);
 			FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
-
+			FlxG.camera.shake(0.01,0.5);
 			transitioning = true;
 			// FlxG.sound.music.stop();
 
@@ -393,10 +392,12 @@ class TitleState extends MusicBeatState
 		switch (curBeat)
 		{
 			case 2:
+				FlxG.camera.shake(0.01,0.25);
 				createCoolText(['obamamakesmusic', 'ouchmyphysics', 'sayofthelor', 'chasmhasawoken', 'razerruler']);
 			 // credTextShit.visible = true;
 			 // ^^^ comment that out if it fucks something up
 			case 3:
+				FlxG.camera.shake(0.01,0.25);
 				addMoreText('presents');
 			// credTextShit.text += '\npresent...';
 			// credTextShit.addText();
@@ -406,8 +407,10 @@ class TitleState extends MusicBeatState
 			// credTextShit.text = 'In association \nwith';
 			// credTextShit.screenCenter();
 			case 6:
+				FlxG.camera.shake(0.01,0.25);
 				createCoolText(['ayyy', 'newgrounds']);
 			case 7:
+				FlxG.camera.shake(0.01,0.25);
 				addMoreText('how are ya');
 			    ngSpr.visible = true;
 			// credTextShit.text += '\nNewgrounds';
@@ -419,24 +422,30 @@ class TitleState extends MusicBeatState
 			// credTextShit.text = 'Shoutouts Tom Fulp';
 			// credTextShit.screenCenter();
 			case 9:
+				FlxG.camera.shake(0.01,0.25);
 				createCoolText([curWacky[0]]);
 			// credTextShit.visible = true;
 			case 11:
+				FlxG.camera.shake(0.01,0.25);
 				addMoreText(curWacky[1]);
 			// credTextShit.text += '\nlmao';
 			case 12:
 				deleteCoolText();
+				FlxG.camera.shake(0.01,0.25);
 				addMoreText('Friday');
 			// credTextShit.visible = false;
 			// credTextShit.text = "Friday";
 			// credTextShit.screenCenter();
 			case 13:
+				FlxG.camera.shake(0.01,0.25);
 				addMoreText('Night');
 			// credTextShit.visible = true;
 			case 14:
+				FlxG.camera.shake(0.01,0.25);
 				addMoreText('Funkin');
 			// credTextShit.text += '\nNight';
 			case 15:
+				FlxG.camera.shake(0.01,0.25);
 				addMoreText('VS LAWNMOWER'); // credTextShit.text += '\nFunkin';
 
 			case 16:
