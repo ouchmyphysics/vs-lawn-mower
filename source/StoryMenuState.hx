@@ -25,7 +25,7 @@ class StoryMenuState extends MusicBeatState
 	var scoreText:FlxText;
 
 	var weekData:Array<Dynamic> = [
-		['Tutorial'],
+		['Tutorial'], ['Lawn' , 'FreshGrass' , 'Overgrown' , 'Deathmower']
 	];
 	var curDifficulty:Int = 1;
 
@@ -33,9 +33,11 @@ class StoryMenuState extends MusicBeatState
 
 	var weekCharacters:Array<Dynamic> = [
 		['', 'bf', 'gf'],
+		['', 'bf', 'gf']
 	];
 
 	var weekNames:Array<String> = [
+		"How to Funk",
 		"a freakin lawn mower lol"
 	];
 
@@ -321,7 +323,7 @@ class StoryMenuState extends MusicBeatState
 			PlayState.campaignScore = 0;
 			new FlxTimer().start(1, function(tmr:FlxTimer)
 			{
-				if (curWeek == 0)
+				if (curWeek == 1)
 					{
 						FlxG.sound.music.stop();
 						LoadingState.loadAndSwitchState(new VideoState("assets/videos/open.webm", new PlayState()));

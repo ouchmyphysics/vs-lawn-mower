@@ -117,7 +117,6 @@ class Caching extends MusicBeatState
             if (!i.startsWith("tutorial")) {
               FlxG.sound.cache(Paths.inst(i));
               }
-            if (!i.startsWith("offsettest")) {}
             else {
               FlxG.sound.cache(Paths.inst(i));
               FlxG.sound.cache(Paths.voices(i));
@@ -125,9 +124,7 @@ class Caching extends MusicBeatState
             trace("cached " + i);
             done++;
         }
-
         trace("Finished caching...");
-        FlxG.sound.load('assets/sounds/titleShoot.ogg')
         FlxG.switchState(new TitleState());
     }
 
