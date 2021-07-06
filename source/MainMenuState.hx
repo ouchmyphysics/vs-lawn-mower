@@ -191,6 +191,7 @@ class MainMenuState extends MusicBeatState
 					
 					if (FlxG.save.data.flashing)
 						FlxFlicker.flicker(magenta, 1.1, 0.15, false);
+					    FlxG.camera.shake(0.01,0.5);
 
 					menuItems.forEach(function(spr:FlxSprite)
 					{
