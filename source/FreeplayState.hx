@@ -311,8 +311,7 @@ class FreeplayState extends MusicBeatState
 		#end
 
 		#if PRELOAD_ALL
-		// REMOVES PREVIEWS TO REDUCE LAG
-	//	FlxG.sound.playMusic(Paths.inst(songs[curSelected].songName), 0);
+     FlxG.sound.playMusic(Paths.inst(songs[curSelected].songName), 0);
 		#end
 
 		var bullShit:Int = 0;
