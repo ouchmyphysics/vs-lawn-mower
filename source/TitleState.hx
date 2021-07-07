@@ -393,12 +393,10 @@ class TitleState extends MusicBeatState
 		switch (curBeat)
 		{
 			case 2:
-				FlxG.camera.shake(0.01,0.25);
 				createCoolText(['obamamakesmusic', 'ouchmyphysics', 'sayofthelor', 'chasmhasawoken', 'razerruler']);
 			 // credTextShit.visible = true;
 			 // ^^^ comment that out if it fucks something up
 			case 3:
-				FlxG.camera.shake(0.01,0.25);
 				addMoreText('presents');
 			// credTextShit.text += '\npresent...';
 			// credTextShit.addText();
