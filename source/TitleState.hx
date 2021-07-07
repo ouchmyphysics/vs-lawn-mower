@@ -339,6 +339,7 @@ class TitleState extends MusicBeatState
 
 		if (pressedEnter && !skippedIntro && initialized)
 		{
+			FlxG.camera.shake(0,0);
 			skipIntro();
 		}
 
@@ -407,10 +408,8 @@ class TitleState extends MusicBeatState
 			// credTextShit.text = 'In association \nwith';
 			// credTextShit.screenCenter();
 			case 6:
-				FlxG.camera.shake(0.01,0.25);
 				createCoolText(['ayyy', 'newgrounds']);
 			case 7:
-				FlxG.camera.shake(0.01,0.25);
 				addMoreText('how are ya');
 			    ngSpr.visible = true;
 			// credTextShit.text += '\nNewgrounds';
@@ -422,30 +421,25 @@ class TitleState extends MusicBeatState
 			// credTextShit.text = 'Shoutouts Tom Fulp';
 			// credTextShit.screenCenter();
 			case 9:
-				FlxG.camera.shake(0.01,0.25);
 				createCoolText([curWacky[0]]);
 			// credTextShit.visible = true;
 			case 11:
-				FlxG.camera.shake(0.01,0.25);
+				
 				addMoreText(curWacky[1]);
 			// credTextShit.text += '\nlmao';
 			case 12:
 				deleteCoolText();
-				FlxG.camera.shake(0.01,0.25);
 				addMoreText('Friday');
 			// credTextShit.visible = false;
 			// credTextShit.text = "Friday";
 			// credTextShit.screenCenter();
 			case 13:
-				FlxG.camera.shake(0.01,0.25);
 				addMoreText('Night');
 			// credTextShit.visible = true;
 			case 14:
-				FlxG.camera.shake(0.01,0.25);
 				addMoreText('Funkin');
 			// credTextShit.text += '\nNight';
 			case 15:
-				FlxG.camera.shake(0.01,0.25);
 				addMoreText('VS LAWNMOWER'); // credTextShit.text += '\nFunkin';
 
 			case 16:
