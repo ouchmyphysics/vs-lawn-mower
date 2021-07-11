@@ -107,11 +107,16 @@ class Character extends FlxSprite
 			case 'mower':
 				var tex = Paths.getSparrowAtlas('characters/mower');
 				frames = tex;
-				animation.addByPrefix('idle', 'mower idle', 4, false);
-				animation.addByPrefix('singUP', 'mower up', 1, false);
-				animation.addByPrefix('singLEFT', 'mower left', 1, false);
-				animation.addByPrefix('singRIGHT', 'mower right', 1, false);
-				animation.addByPrefix('singDOWN', 'mower down', 1, false);
+				animation.addByPrefix('idle', 'mower idle', 24, false);
+				animation.addByPrefix('singUP', 'mower up', 24, false);
+				animation.addByPrefix('singLEFT', 'mower left', 24, false);
+				animation.addByPrefix('singRIGHT', 'mower right', 24, false);
+				animation.addByPrefix('singDOWN', 'mower down', 24, false);
+
+				addOffset("singUP", 3, 31);
+				addOffset("singRIGHT", -38, -7);
+				addOffset("singLEFT", 20, 53);
+				addOffset("singDOWN", 10, 82);
 
 				playAnim('idle');
 		}
