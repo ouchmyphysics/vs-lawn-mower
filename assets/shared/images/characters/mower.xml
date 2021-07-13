@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <TextureAtlas imagePath="mower.png"><SubTexture name="mower idle0000" x="0" y="0" width="554" height="716" frameX="0" frameY="0" frameWidth="554" frameHeight="716" />
 <SubTexture name="mower idle0001" x="554" y="0" width="554" height="716" frameX="0" frameY="0" frameWidth="554" frameHeight="716" />
-<SubTexture name="mower idle0002" x="1108" y="0" width="554" height="716" frameX="0" frameY="0" frameWidth="554" frameHeight="716" />
 <SubTexture name="mower up0000" x="1662" y="0" width="554" height="716" frameX="0" frameY="0" frameWidth="554" frameHeight="716" />
 <SubTexture name="mower up0001" x="0" y="716" width="554" height="716" frameX="0" frameY="0" frameWidth="554" frameHeight="716" />
 <SubTexture name="mower up0002" x="554" y="716" width="554" height="716" frameX="0" frameY="0" frameWidth="554" frameHeight="716" />

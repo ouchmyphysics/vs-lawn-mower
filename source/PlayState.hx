@@ -822,7 +822,7 @@ class PlayState extends MusicBeatState
 
 			case 'mower':
 				dad.x += 108;
-				dad.y += -209;
+				dad.y += 209;
 			case 'parents-christmas':
 				dad.x -= 500;
 			case 'senpai':
