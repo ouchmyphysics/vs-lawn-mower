@@ -392,7 +392,7 @@ class PlayState extends MusicBeatState
 				curStage = 'spooky';
 				halloweenLevel = true;
 
-				var hallowTex = Paths.getSparrowAtlas('halloween_bg','week2');
+				var hallowTex = Paths.getSparrowAtlas('halloween_bg','week1');
 
 				halloweenBG = new FlxSprite(-200, -100);
 				halloweenBG.frames = hallowTex;

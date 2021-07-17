@@ -4,3 +4,4 @@ Lawn:gf:1
 Freshgrass:gf:1
 Overgrown:gf:1
 Deathmower:gf:1
+Amongeez:spooky:1
