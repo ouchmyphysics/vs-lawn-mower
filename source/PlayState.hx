@@ -709,6 +709,34 @@ class PlayState extends MusicBeatState
 								add(waveSpriteFG);
 						*/
 			}
+			case 'outside':
+				{
+						defaultCamZoom = 0.9;
+						curStage = 'outside';
+						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('lawn_stages/outside'));
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.9, 0.9);
+						bg.active = false;
+						add(bg);
+				}
+			
+			case 'outside-fire'
+			    {
+					curStage = 'spooky';
+				    halloweenLevel = true;
+
+				    var hallowTex = Paths.getSparrowAtlas('outside_fire_bg','shared/images/lawn_stages');
+
+			    	halloweenBG = new FlxSprite(-200, -100);
+		    		halloweenBG.frames = hallowTex;
+	    			halloweenBG.animation.addByPrefix('idle', 'halloweem bg0');
+	    			halloweenBG.animation.addByPrefix('lightning', 'halloweem bg lightning strike', 24, false);
+	    			halloweenBG.animation.play('idle');
+		    		halloweenBG.antialiasing = true;
+		    		add(halloweenBG);
+    
+		    		isHalloween = true;
+				}
 			case 'stage':
 				{
 						defaultCamZoom = 0.9;
