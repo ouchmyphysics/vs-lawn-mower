@@ -393,7 +393,7 @@ class TitleState extends MusicBeatState
 		switch (curBeat)
 		{
 			case 2:
-				createCoolText(['obamamakesmusic', 'ouchmyphysics', 'sayofthelor', 'chasmhasawoken', 'razerruler', 'Jatotz', "Sunflowers"]);
+				createCoolText(['airplando', 'sayofthelor', 'razerruler', 'chasmhasawoken', 'ouchmyphysics', 'Jatotz', "Sunflowers"]);
 			 // credTextShit.visible = true;
 			 // ^^^ comment that out if it fucks something up
 			case 3:
