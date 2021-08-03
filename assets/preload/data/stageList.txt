@@ -1,3 +1,4 @@
 stage
 halloween
 outside
+outside-fire
