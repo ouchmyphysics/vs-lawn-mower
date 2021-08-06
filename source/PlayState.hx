@@ -723,7 +723,7 @@ class PlayState extends MusicBeatState
 					{
 							defaultCamZoom = 0.6;
 							curStage = 'outside-fire';
-							var bg:FlxSprite = new FlxSprite(-600, -360).loadGraphic(Paths.image('lawn_stages/outside_fire'));
+							var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('lawn_stages/outside_fire'));
 							bg.antialiasing = true;
 							bg.scrollFactor.set(0.8, 0.8);
 							bg.active = false;
