@@ -159,7 +159,7 @@ class TitleState extends MusicBeatState
 			// music.play();
 			FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
 
-			FlxG.sound.music.fadeIn(4, 0, 0.7);
+			FlxG.sound.music.fadeIn(1, 0, 0.7);
 		}
 
 		Conductor.changeBPM(150);
@@ -392,40 +392,43 @@ class TitleState extends MusicBeatState
 
 		switch (curBeat)
 		{
-			case 2:
-				createCoolText(['airplando', 'sayofthelor', 'razerruler', 'chasmhasawoken', 'ouchmyphysics', 'Jatotz', "Sunflowers"]);
+			case 3:
+				createCoolText(['airplando']);
 			 // credTextShit.visible = true;
 			 // ^^^ comment that out if it fucks something up
-			case 3:
-				addMoreText('presents');
+			case 4:
+				addMoreText('sayofthelor');
 			// credTextShit.text += '\npresent...';
 			// credTextShit.addText();
 			case 5:
-				deleteCoolText();
+				addMoreText('razerruler');
 			// credTextShit.visible = false;
 			// credTextShit.text = 'In association \nwith';
 			// credTextShit.screenCenter();
 			case 6:
-				createCoolText(['ayyy', 'newgrounds']);
+				addMoreText('chasmhasawoken');
 			case 7:
-				addMoreText('how are ya');
-			    ngSpr.visible = true;
+				addMoreText('ouchmyphysics');
 			// credTextShit.text += '\nNewgrounds';
 			case 8:
-				deleteCoolText();
-				ngSpr.visible = false;
+				addMoreText('jatotz');
 			// credTextShit.visible = false;
 
 			// credTextShit.text = 'Shoutouts Tom Fulp';
 			// credTextShit.screenCenter();
 			case 9:
-				createCoolText([curWacky[0]]);
+				addMoreText('sunflowers');
 			// credTextShit.visible = true;
+			case 10:
+				addMoreText('presents');
 			case 11:
-				
-				addMoreText(curWacky[1]);
-			// credTextShit.text += '\nlmao';
+			    deleteCoolText();
+				FlxG.sound.music.fadeOut(0);
+				addMoreText('newgrounds');
+				ngSpr.visible = true;
 			case 12:
+				ngSpr.visible = false;
+				FlxG.sound.music.fadeIn(0, 0, 0.7);
 				deleteCoolText();
 				addMoreText('Friday');
 			// credTextShit.visible = false;
