@@ -342,23 +342,14 @@ class PlayState extends MusicBeatState
 		//dialogue shit
 		switch (songLowercase)
 		{
-			case 'tutorial':
-				dialogue = ["Hey you're pretty cute.", 'Use the arrow keys to keep up \nwith me singing.'];
-			case 'bopeebo':
-				dialogue = [
-					'HEY!',
-					"You think you can just sing\nwith my daughter like that?",
-					"If you want to date her...",
-					"You're going to have to go \nthrough ME first!"
-				];
-			case 'fresh':
-				dialogue = ["Not too shabby boy.", ""];
-			case 'dadbattle':
-				dialogue = [
-					"gah you think you're hot stuff?",
-					"If you can beat me here...",
-					"Only then I will even CONSIDER letting you\ndate my daughter!"
-				];
+			case 'lawn':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('lawn/dialogue'));
+			case 'freshgrass':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('freshgrass/dialogue'));
+			case 'overgrown':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('overgrown/dialogue'));
+			case 'deathmower':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('deathmower/dialogue'));
 			case 'senpai':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('senpai/senpaiDialogue'));
 			case 'roses':
@@ -1035,7 +1026,7 @@ class PlayState extends MusicBeatState
 
 		// Add Kade Engine watermark
 		kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " - " + CoolUtil.difficultyFromInt(storyDifficulty) + (Main.watermarks ? " | KE " + MainMenuState.kadeEngineVer : ""), 16);
-		kadeEngineWatermark.setFormat(Paths.font("vcr.ttf"), 0, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+		kadeEngineWatermark.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		kadeEngineWatermark.scrollFactor.set();
 		add(kadeEngineWatermark);
 
@@ -1144,6 +1135,14 @@ class PlayState extends MusicBeatState
 					FlxG.sound.play(Paths.sound('ANGRY'));
 					schoolIntro(doof);
 				case 'thorns':
+					schoolIntro(doof);
+				case 'lawn':
+					schoolIntro(doof);
+				case 'freshgrass':
+					schoolIntro(doof);
+				case 'overgrown':
+					schoolIntro(doof);
+				case 'deathmower':
 					schoolIntro(doof);
 				default:
 					startCountdown();
