@@ -1018,13 +1018,24 @@ class PlayState extends MusicBeatState
 		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
 			'health', 0, 2);
 		healthBar.scrollFactor.set();
-		healthBar.createFilledBar(0xFFFF0000, 0xFF66FF33);
+		switch(curSong.toLowerCase()){
+			case 'lawn':
+				healthBar.createFilledBar(0xFFFF6363, 0xFF5EB4EF);
+			case 'freshgrass':
+				healthBar.createFilledBar(0xFFFF6363, 0xFF5EB4EF);
+			case 'overgrown':
+				healthBar.createFilledBar(0xFFFF6363, 0xFF5EB4EF);
+			case 'deathmower':
+				healthBar.createFilledBar(0xFFFF6363, 0xFF5EB4EF);
+			default:
+				healthBar.createFilledBar(0xFFFF0000, 0xFF5EB4EF);
+		}
 		// healthBar
 		add(healthBar);
 
 		// Add Kade Engine watermark
 		kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " - " + CoolUtil.difficultyFromInt(storyDifficulty) + (Main.watermarks ? " | KE " + MainMenuState.kadeEngineVer : ""), 16);
-		kadeEngineWatermark.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+		kadeEngineWatermark.setFormat(Paths.font("vcr.ttf"), 0, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		kadeEngineWatermark.scrollFactor.set();
 		add(kadeEngineWatermark);
 

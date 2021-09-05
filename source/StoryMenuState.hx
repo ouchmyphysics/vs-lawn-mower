@@ -38,7 +38,7 @@ class StoryMenuState extends MusicBeatState
 
 	var weekNames:Array<String> = [
 		"How to Funk",
-		"a freakin lawn mower lol"
+		"THE MOWER"
 	];
 
 	var txtWeekTitle:FlxText;
@@ -326,7 +326,7 @@ class StoryMenuState extends MusicBeatState
 				if (curWeek == 1)
 					{
 						FlxG.sound.music.stop();
-						LoadingState.loadAndSwitchState(new VideoState("assets/videos/open.webm", new PlayState()));
+						LoadingState.loadAndSwitchState(new VideoState("assets/videos/mow.webm", new PlayState()));
 					}
 					else
 						{
