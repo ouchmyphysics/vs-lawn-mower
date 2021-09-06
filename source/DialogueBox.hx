@@ -157,8 +157,8 @@ class DialogueBox extends FlxSpriteGroup
 		else if (PlayState.SONG.song.toLowerCase() == 'lawn' || PlayState.SONG.song.toLowerCase() == 'freshgrass' || PlayState.SONG.song.toLowerCase() == 'overgrown' || PlayState.SONG.song.toLowerCase() == 'deathmower')
 			{
 				portraitLeft = new FlxSprite(-1500, 0);
-				portraitLeft.frames = Paths.getSparrowAtlas('ports/mowerPortrait', 'shared');
-				portraitLeft.animation.addByPrefix('enter', 'Senpai Portrait Enter', 24, false);
+			//	portraitLeft.frames = Paths.getSparrowAtlas('ports/mowerPortrait', 'shared');
+			//	portraitLeft.animation.addByPrefix('enter', 'Senpai Portrait Enter', 24, false);
 				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.175));
 				portraitLeft.updateHitbox();
 				portraitLeft.scrollFactor.set();
